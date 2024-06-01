@@ -1,8 +1,5 @@
 package com.nikola.spring.dto;
 
-import com.nikola.spring.entities.UserEntity;
-import jakarta.persistence.*;
-import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 

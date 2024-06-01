@@ -1,12 +1,6 @@
 package com.nikola.spring.dto;
 
-import com.nikola.spring.entities.CustomerEntity;
-import jakarta.persistence.Column;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Transient;
 import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 import java.io.Serial;

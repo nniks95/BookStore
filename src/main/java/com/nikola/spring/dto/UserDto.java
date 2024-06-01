@@ -1,8 +1,6 @@
 package com.nikola.spring.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.nikola.spring.entities.RoleEntity;
-import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;

@@ -2,14 +2,13 @@ package com.nikola.spring.entities;
 
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.Fetch;
 
 import java.io.Serial;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "product_images")
-public class ProductImageEntity implements Serializable {
+@Table(name = "book_image")
+public class BookImageEntity implements Serializable {
 
     @Serial
     private static final long serialVersionUID = 1L;
@@ -28,7 +27,7 @@ public class ProductImageEntity implements Serializable {
     private byte[] data;
     @OneToOne(fetch = FetchType.EAGER) //kada se koriste anotacije za vezivanje, treba koristiti joincolumn
     @JoinColumn(name = "product_id", nullable = false)
-    private ProductEntity product;
+    private BookEntity book;
 
 
     public Integer getId() {
@@ -64,19 +63,19 @@ public class ProductImageEntity implements Serializable {
     }
 
 
-    public ProductEntity getProduct() {
-        return product;
-    }
-
-    public void setProduct(ProductEntity product) {
-        this.product = product;
-    }
-
     public byte[] getData() {
         return data;
     }
 
     public void setData(byte[] data) {
         this.data = data;
+    }
+
+    public BookEntity getBook() {
+        return book;
+    }
+
+    public void setBook(BookEntity book) {
+        this.book = book;
     }
 }

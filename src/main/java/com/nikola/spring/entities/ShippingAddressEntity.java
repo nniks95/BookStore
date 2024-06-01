@@ -9,7 +9,6 @@ import java.io.Serializable;
 @Table(name = "shipping_addresses")
 public class ShippingAddressEntity implements Serializable {
 
-
     @Serial
     private static final long serialVersionUID = 1L;
 

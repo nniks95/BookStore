@@ -1,10 +1,10 @@
 package com.nikola.spring.entities;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Size;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Table(name = "customers")
@@ -27,6 +27,13 @@ public class CustomerEntity implements Serializable {
     @OneToOne(fetch = FetchType.EAGER, orphanRemoval = true)
     @JoinColumn(name = "cart_id", nullable = false)
     private CartEntity cart;
+    @OneToOne(fetch = FetchType.EAGER, mappedBy = "customer", orphanRemoval = true)
+    private LoyaltyCardEntity loyaltyCardEntity;
+    @OneToMany(fetch = FetchType.EAGER, orphanRemoval = true, mappedBy = "customer")
+    private List<PersistanceLoginEntity> persistanceLogin;
+    @OneToOne(orphanRemoval = true)
+    @JoinColumn(name = "wishlist_id", nullable = false)
+    private WishlistEntity wishlist;
 
 
     public Integer getId() {
@@ -69,14 +76,27 @@ public class CustomerEntity implements Serializable {
         this.cart = cart;
     }
 
-    @Override
-    public String toString() {
-        return "CustomerEntity{" +
-                "id=" + id +
-                ", customerPhone='" + customerPhone + '\'' +
-                ", shippingAddress=" + shippingAddress +
-                ", user=" + user +
-                ", cart=" + cart +
-                '}';
+    public LoyaltyCardEntity getLoyaltyCardEntity() {
+        return loyaltyCardEntity;
+    }
+
+    public void setLoyaltyCardEntity(LoyaltyCardEntity loyaltyCardEntity) {
+        this.loyaltyCardEntity = loyaltyCardEntity;
+    }
+
+    public List<PersistanceLoginEntity> getPersistanceLogin() {
+        return persistanceLogin;
+    }
+
+    public void setPersistanceLogin(List<PersistanceLoginEntity> persistanceLogin) {
+        this.persistanceLogin = persistanceLogin;
+    }
+
+    public WishlistEntity getWishlist() {
+        return wishlist;
+    }
+
+    public void setWishlist(WishlistEntity wishlist) {
+        this.wishlist = wishlist;
     }
 }

@@ -11,9 +11,9 @@ public class OrderItemDto implements Serializable {
     private Integer id;
 
     private Integer orderId;
-    private String productName;
-    private Double productPrice;
-    private Integer productQuantity;
+    private String bookName;
+    private Double bookPrice;
+    private Integer bookQuantity;
     private Double price;
 
     public Integer getId() {
@@ -32,35 +32,35 @@ public class OrderItemDto implements Serializable {
         this.orderId = orderId;
     }
 
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
-
-    public Double getProductPrice() {
-        return productPrice;
-    }
-
-    public void setProductPrice(Double productPrice) {
-        this.productPrice = productPrice;
-    }
-
-    public Integer getProductQuantity() {
-        return productQuantity;
-    }
-
-    public void setProductQuantity(Integer productQuantity) {
-        this.productQuantity = productQuantity;
-    }
-
     public Double getPrice() {
         return price;
     }
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public String getBookName() {
+        return bookName;
+    }
+
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+
+    public Double getBookPrice() {
+        return bookPrice;
+    }
+
+    public void setBookPrice(Double bookPrice) {
+        this.bookPrice = bookPrice;
+    }
+
+    public Integer getBookQuantity() {
+        return bookQuantity;
+    }
+
+    public void setBookQuantity(Integer bookQuantity) {
+        this.bookQuantity = bookQuantity;
     }
 }

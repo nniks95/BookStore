@@ -1,8 +1,5 @@
 package com.nikola.spring.dto;
 
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.Size;
-
 import java.io.Serial;
 import java.io.Serializable;
 

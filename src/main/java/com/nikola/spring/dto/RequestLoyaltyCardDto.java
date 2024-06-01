@@ -1,13 +1,10 @@
 package com.nikola.spring.dto;
 
 
-import com.nikola.spring.entities.CustomerEntity;
-import jakarta.persistence.*;
-
 import java.io.Serial;
 import java.io.Serializable;
 
-public class RequestLoyaltyCard implements Serializable {
+public class RequestLoyaltyCardDto implements Serializable {
 
     @Serial
     private static final long serialVersionUID = 1L;

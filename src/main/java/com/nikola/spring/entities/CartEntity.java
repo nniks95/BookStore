@@ -1,7 +1,6 @@
 package com.nikola.spring.entities;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
 
 import java.io.Serial;
 import java.io.Serializable;

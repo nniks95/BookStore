@@ -4,11 +4,107 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5faf6b6-d459-4459-9fa6-edd6b1c4d63d" name="Changes" comment="" />
+    <list default="true" id="f5faf6b6-d459-4459-9fa6-edd6b1c4d63d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/configuration/JpaPersistence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/configuration/SpringMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/configuration/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/converter/tempConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/AuthorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/AwardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/BookDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/BookImageDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/CartDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/CartItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/CustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/GenreDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/LoyaltyCardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/OrderAddressDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/OrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/OrderItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/PersistanceLoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/PublisherDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/RequestLoyaltyCardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/ReviewDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/RoleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/ShippingAddressDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/dto/WishlistDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/AuthorEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/AwardEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/BookEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/BookImageEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/CartEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/CartItemEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/CustomerEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/GenreEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/LoyaltyCardEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/OrderAddressEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/OrderEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/OrderItemEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/PersistanceLoginEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/PublisherEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/RequestLoyaltyCardEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/ReviewEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/RoleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/ShippingAddressEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/entities/WishlistEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/exceptions/DataNotValidatedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/exceptions/DuplicateNotAllowed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/exceptions/FileUploadException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/exceptions/InstanceUndefinedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/exceptions/InvalidCartException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/exceptions/SuspendedUserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/AuthorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/AwardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/BookImageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/CartItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/CartRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/GenreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/LoyaltyCardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/OrderAddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/OrderItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/PersistanceLoginRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/PublisherRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/RequestLoyaltyCardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/ReviewRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/ShippingAddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/repositories/WishlistRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/security/CorsHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/security/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/security/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/security/SpringSecurityInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/utils/AuthenticationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/utils/FileValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/utils/LoadData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nikola/spring/utils/RegistrationForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -17,7 +113,9 @@
   "associatedIndex": 8
 }]]></component>
   <component name="ProjectId" id="2hEePDJghHgemiLEknkUJOBahb9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,10 +125,29 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Niks/IdeaProjects/BookStore/src/main/java/com/nikola/spring/repositories",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Niks\IdeaProjects\BookStore\src\main\java\com\nikola\spring\repositories" />
+      <recent name="C:\Users\Niks\IdeaProjects\BookStore\src\main\java\com\nikola\spring\dto" />
+      <recent name="C:\Users\Niks\IdeaProjects\BookStore\src\main\java\com\nikola\spring\entities" />
+      <recent name="C:\Users\Niks\IdeaProjects\BookStore\src\main\java\com\nikola\spring" />
+      <recent name="C:\Users\Niks\IdeaProjects\BookStore\src\main\java\com\nikola\spring\configuration" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nikola.spring.repositories" />
+      <recent name="com.nikola.spring.dto" />
+      <recent name="com.nikola.spring.entities" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,5 +158,16 @@
       <updated>1717163640389</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nikola/spring/security/SecurityConfiguration.java</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

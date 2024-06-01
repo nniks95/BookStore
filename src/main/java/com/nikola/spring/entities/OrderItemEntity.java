@@ -18,14 +18,15 @@ public class OrderItemEntity implements Serializable {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "order_id", nullable = false)
     private OrderEntity order;
-    @Column(name = "product_name", nullable = false)
-    private String productName;
-    @Column(name = "product_price", nullable = false)
-    private Double productPrice;
-    @Column(name = "product_quantity", nullable = false)
-    private Integer productQuantity;
+    @Column(name = "book_name", nullable = false)
+    private String bookName;
+    @Column(name = "book_price", nullable = false)
+    private Double bookPrice;
+    @Column(name = "book_quantity", nullable = false)
+    private Integer bookQuantity;
     @Column(nullable = false)
     private Double price;
+
 
     public Integer getId() {
         return id;
@@ -43,28 +44,28 @@ public class OrderItemEntity implements Serializable {
         this.order = order;
     }
 
-    public String getProductName() {
-        return productName;
+    public String getBookName() {
+        return bookName;
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
     }
 
-    public Double getProductPrice() {
-        return productPrice;
+    public Double getBookPrice() {
+        return bookPrice;
     }
 
-    public void setProductPrice(Double productPrice) {
-        this.productPrice = productPrice;
+    public void setBookPrice(Double bookPrice) {
+        this.bookPrice = bookPrice;
     }
 
-    public Integer getProductQuantity() {
-        return productQuantity;
+    public Integer getBookQuantity() {
+        return bookQuantity;
     }
 
-    public void setProductQuantity(Integer productQuantity) {
-        this.productQuantity = productQuantity;
+    public void setBookQuantity(Integer bookQuantity) {
+        this.bookQuantity = bookQuantity;
     }
 
     public Double getPrice() {

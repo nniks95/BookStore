@@ -37,7 +37,7 @@ public class JpaPersistence {
     public HikariDataSource getHikariDataSource(){
         HikariDataSource returnValue = new HikariDataSource();
         returnValue.setDriverClassName("org.postgresql.Driver");
-        returnValue.setJdbcUrl("jdbc:postgresql://localhost:5432/productMenagement");
+        returnValue.setJdbcUrl("jdbc:postgresql://localhost:5432/Bookstore");
         returnValue.setUsername("postgres");
         returnValue.setPassword("admin");
         return returnValue;

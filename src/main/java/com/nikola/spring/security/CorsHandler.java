@@ -1,12 +1,11 @@
 package com.nikola.spring.security;
 
-import java.util.Arrays;
-
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Component;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 
-import jakarta.servlet.http.HttpServletRequest;
+import java.util.Arrays;
 
 @Component
 public class CorsHandler implements CorsConfigurationSource {

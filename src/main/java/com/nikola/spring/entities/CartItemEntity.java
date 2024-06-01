@@ -16,9 +16,9 @@ public class CartItemEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @ManyToOne(fetch = FetchType.EAGER) //kada je many to one mora joincolumn
-    @JoinColumn(name = "product_id", nullable = false)
-    private ProductEntity product;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "book_id", nullable = false)
+    private BookEntity book;
     @Column(nullable = false)
     private Integer quantity;
     @Column(nullable = false)
@@ -36,12 +36,12 @@ public class CartItemEntity implements Serializable {
         this.id = id;
     }
 
-    public ProductEntity getProduct() {
-        return product;
+    public BookEntity getBook() {
+        return book;
     }
 
-    public void setProduct(ProductEntity product) {
-        this.product = product;
+    public void setBook(BookEntity product) {
+        this.book = product;
     }
 
     public Integer getQuantity() {
