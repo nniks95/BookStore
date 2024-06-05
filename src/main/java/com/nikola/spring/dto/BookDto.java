@@ -151,4 +151,18 @@ public class BookDto implements Serializable {
     public void setWishlistsIds(List<Integer> wishlistsIds) {
         this.wishlistsIds = wishlistsIds;
     }
+
+    @Override
+    public String toString() {
+        return "BookDto{" +
+                "ISBN='" + ISBN + '\'' +
+                ", title='" + title + '\'' +
+                ", authorId=" + authorId +
+                ", genreId=" + genreId +
+                ", language='" + language + '\'' +
+                ", publisherId=" + publisherId +
+                ", price=" + price +
+                ", numberOfPages=" + numberOfPages +
+                '}';
+    }
 }

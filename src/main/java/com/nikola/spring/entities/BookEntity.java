@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "book")
+@Table(name = "books")
 public class BookEntity implements Serializable {
 
     @Serial
@@ -23,7 +23,7 @@ public class BookEntity implements Serializable {
     @ManyToOne
     @JoinColumn(nullable = false, name = "author_id")
     private AuthorEntity author;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(nullable = false, name = "genre_id")
     private GenreEntity genre;
     @Column(nullable = false, length = 40)
@@ -82,7 +82,7 @@ public class BookEntity implements Serializable {
         return genre;
     }
 
-    public void setGenre(GenreEntity genres) {
+    public void setGenre(GenreEntity genre) {
         this.genre = genre;
     }
 
@@ -148,5 +148,21 @@ public class BookEntity implements Serializable {
 
     public void setWishlists(List<WishlistEntity> wishlists) {
         this.wishlists = wishlists;
+    }
+
+    @Override
+    public String toString() {
+        return "BookEntity{" +
+                "id=" + id +
+                ", ISBN='" + ISBN + '\'' +
+                ", title='" + title + '\'' +
+                ", author=" + author +
+                ", genre=" + genre +
+                ", language='" + language + '\'' +
+                ", publisher=" + publisher +
+                ", available=" + available +
+                ", price=" + price +
+                ", numberOfPages=" + numberOfPages +
+                '}';
     }
 }

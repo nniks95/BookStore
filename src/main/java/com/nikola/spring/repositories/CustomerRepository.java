@@ -11,4 +11,7 @@ import java.util.Optional;
 @Repository
 public interface CustomerRepository extends JpaRepository<CustomerEntity,Integer> {
 
+    @Query(value = "SELECT c.* FROM customers c INNER JOIN users u ON c.user_id = u.id WHERE u.email = :email", nativeQuery = true)
+    Optional<CustomerEntity> findByEmail(@Param("email") String email);
+
 }

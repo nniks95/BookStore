@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "genre")
+@Table(name = "genres")
 public class GenreEntity implements Serializable {
 
     @Serial
@@ -18,8 +18,7 @@ public class GenreEntity implements Serializable {
     private Integer id;
     @Column(nullable = false, length = 60, unique = true)
     private String name;
-    @ManyToMany(mappedBy = "genres")
-    @Transient
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "genre", orphanRemoval = true)
     private List<BookEntity> books;
 
     public Integer getId() {
@@ -46,4 +45,11 @@ public class GenreEntity implements Serializable {
         this.books = books;
     }
 
+    @Override
+    public String toString() {
+        return "GenreEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

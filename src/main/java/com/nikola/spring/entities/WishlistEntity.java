@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "wish_list")
+@Table(name = "wish_lists")
 public class WishlistEntity implements Serializable {
 
     @Serial

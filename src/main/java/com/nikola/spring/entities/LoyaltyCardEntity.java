@@ -6,7 +6,7 @@ import java.io.Serial;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "loyalty_card")
+@Table(name = "loyalty_cards")
 public class LoyaltyCardEntity implements Serializable {
 
     @Serial

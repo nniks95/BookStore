@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "publisher")
+@Table(name = "publishers")
 public class PublisherEntity implements Serializable {
 
     @Serial

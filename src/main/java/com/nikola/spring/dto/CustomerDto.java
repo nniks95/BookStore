@@ -22,6 +22,7 @@ public class CustomerDto implements Serializable {
     private Integer loyaltyCardId;
     private List<Integer> persistanceLoginsIds;
     private Integer wishlistId;
+    private Integer reviewId;
 
     public Integer getId() {
         return id;
@@ -85,5 +86,13 @@ public class CustomerDto implements Serializable {
 
     public void setWishlistId(Integer wishlistId) {
         this.wishlistId = wishlistId;
+    }
+
+    public Integer getReviewId() {
+        return reviewId;
+    }
+
+    public void setReviewId(Integer reviewId) {
+        this.reviewId = reviewId;
     }
 }

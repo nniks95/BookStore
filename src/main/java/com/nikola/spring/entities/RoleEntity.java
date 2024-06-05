@@ -1,14 +1,15 @@
 package com.nikola.spring.entities;
 
 import jakarta.persistence.*;
+import org.springframework.security.core.GrantedAuthority;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "role")
-public class RoleEntity implements Serializable {
+@Table(name = "roles")
+public class RoleEntity implements Serializable, GrantedAuthority {
 
     @Serial
     private static final long serialVersionUID = 1L;
@@ -51,5 +52,10 @@ public class RoleEntity implements Serializable {
 
     public void setUsers(List<UserEntity> users) {
         this.users = users;
+    }
+
+    @Override
+    public String getAuthority() {
+        return null;
     }
 }

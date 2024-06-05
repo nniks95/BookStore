@@ -6,7 +6,7 @@ import java.io.Serial;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "review")
+@Table(name = "reviews")
 public class ReviewEntity implements Serializable {
 
     @Serial
@@ -20,7 +20,8 @@ public class ReviewEntity implements Serializable {
     private BookEntity book;
     @Column(nullable = false)
     private Double rating;
-    @OneToOne(fetch = FetchType.EAGER, orphanRemoval = true, mappedBy = "review_id")
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "customer_id", nullable = false)
     private CustomerEntity customer;
 
     public Integer getId() {

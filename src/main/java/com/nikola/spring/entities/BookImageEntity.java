@@ -7,7 +7,7 @@ import java.io.Serial;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "book_image")
+@Table(name = "book_images")
 public class BookImageEntity implements Serializable {
 
     @Serial

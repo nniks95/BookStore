@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Entity
-@Table(name = "award")
+@Table(name = "awards")
 public class AwardEntity implements Serializable {
 
     @Serial

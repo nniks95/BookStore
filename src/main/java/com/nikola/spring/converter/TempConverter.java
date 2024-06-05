@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Component
-public class tempConverter {
+public class TempConverter {
     private DecimalFormat decForm = new DecimalFormat("0.00");
 
     private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
@@ -180,6 +180,13 @@ public class tempConverter {
             }
         }
         returnValue.setBooks(books);
+
+        Optional<String> dateOfBirthOptional = Optional.ofNullable(authorDto.getDateOfBirth());
+        if(dateOfBirthOptional.isPresent()){
+            DateTimeFormatter dateTimeFormatter1 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+            LocalDate localDate = LocalDate.parse(dateOfBirthOptional.get(), dateTimeFormatter1);
+            returnValue.setDateOfBirth(localDate);
+        }
         return returnValue;
     }
     public AuthorDto entityToDto(AuthorEntity authorEntity){
@@ -193,6 +200,11 @@ public class tempConverter {
             }
         }
         returnValue.setBooksIds(bookIds);
+        Optional<LocalDate>localDateOptional = Optional.ofNullable(authorEntity.getDateOfBirth());
+        if(localDateOptional.isPresent()){
+            String date = localDateOptional.get().toString();
+            returnValue.setDateOfBirth(date);
+        }
         return returnValue;
     }
     public GenreDto entityToDto(GenreEntity genreEntity){
@@ -359,7 +371,7 @@ public class tempConverter {
 
     public BookImageEntity dtoToEntity(BookImageDto bookImageDto){
         BookImageEntity returnValue = mapper.map(bookImageDto, BookImageEntity.class);
-        Optional<Integer> bookIdOptional = Optional.ofNullable(bookImageDto.getBook_id());
+        Optional<Integer> bookIdOptional = Optional.ofNullable(bookImageDto.getBookId());
         if(bookIdOptional.isPresent()){
             Integer bookId = bookIdOptional.get();
             BookEntity book = bookRepository.findById(bookId).orElse(null);
@@ -374,7 +386,7 @@ public class tempConverter {
         BookImageDto returnValue = mapper.map(bookImageEntity,BookImageDto.class);
         Optional<BookEntity> bookEntityOptional = Optional.ofNullable(bookImageEntity.getBook());
         if(bookEntityOptional.isPresent()){
-            returnValue.setBook_id(bookEntityOptional.get().getId());
+            returnValue.setBookId(bookEntityOptional.get().getId());
         }
         return returnValue;
     }
@@ -732,6 +744,10 @@ public class tempConverter {
         if(shippingAddressEntityOptional.isPresent()){
             returnValue.setShippingAddressId(shippingAddressEntityOptional.get().getId());
         }
+        Optional<ReviewEntity> reviewEntityOptional = Optional.ofNullable(customerEntity.getReview());
+        if(reviewEntityOptional.isPresent()){
+            returnValue.setReviewId(reviewEntityOptional.get().getId());
+        }
         Optional<UserEntity> userEntityOptional = Optional.ofNullable(customerEntity.getUser());
         if(userEntityOptional.isPresent()){
             returnValue.setUserId(userEntityOptional.get().getId());
@@ -766,6 +782,13 @@ public class tempConverter {
             ShippingAddressEntity shippingAddress = shippingAddressRepository.findById(shippingAddressIdOptional.get()).orElse(null);
             if(shippingAddress != null){
                 returnValue.setShippingAddress(shippingAddress);
+            }
+        }
+        Optional<Integer> reviewIdOptional = Optional.ofNullable(customerDto.getReviewId());
+        if(reviewIdOptional.isPresent()){
+            ReviewEntity review = reviewRepository.findById(reviewIdOptional.get()).orElse(null);
+            if(review != null){
+                returnValue.setReview(review);
             }
         }
         Optional<Integer> userIdOptional = Optional.ofNullable(customerDto.getUserId());
@@ -809,6 +832,8 @@ public class tempConverter {
         }
         return returnValue;
     }
+
+
 
 
 }

@@ -21,7 +21,7 @@ public class BookImageDto implements Serializable {
     private Long size;
     private byte[] data;
     @NotNull
-    private Integer book_id;
+    private Integer bookId;
 
     public Integer getId() {
         return id;
@@ -63,11 +63,11 @@ public class BookImageDto implements Serializable {
         this.data = data;
     }
 
-    public Integer getBook_id() {
-        return book_id;
+    public Integer getBookId() {
+        return bookId;
     }
 
-    public void setBook_id(Integer book_id) {
-        this.book_id = book_id;
+    public void setBookId(Integer bookId) {
+        this.bookId = bookId;
     }
 }

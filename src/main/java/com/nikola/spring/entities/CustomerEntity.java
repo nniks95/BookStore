@@ -31,9 +31,11 @@ public class CustomerEntity implements Serializable {
     private LoyaltyCardEntity loyaltyCardEntity;
     @OneToMany(fetch = FetchType.EAGER, orphanRemoval = true, mappedBy = "customer")
     private List<PersistanceLoginEntity> persistanceLogin;
-    @OneToOne(orphanRemoval = true)
+    @OneToOne(orphanRemoval = true, fetch = FetchType.EAGER)
     @JoinColumn(name = "wishlist_id", nullable = false)
     private WishlistEntity wishlist;
+    @OneToMany(fetch = FetchType.EAGER, orphanRemoval = true, mappedBy = "customer")
+    private List<ReviewEntity> reviews;
 
 
     public Integer getId() {
@@ -98,5 +100,13 @@ public class CustomerEntity implements Serializable {
 
     public void setWishlist(WishlistEntity wishlist) {
         this.wishlist = wishlist;
+    }
+
+    public List<ReviewEntity> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(List<ReviewEntity> reviews) {
+        this.reviews = reviews;
     }
 }
